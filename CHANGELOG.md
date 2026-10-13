@@ -3,6 +3,30 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [0.3.0] - 2026-10-13
+
+### Added
+
+- **Sign in, and KOY Agents Pro** — sign in with the same KOY account as KOY IDE 2 (Google, GitHub or a link by email, on KOY's account page in your browser)
+- **`koy-ops`: the loop with KOY IDE 2, from the command line** — `koy-ops handoff` turns each result you passed from your build-source agents (Feedback Triage and Site Watch unless you name others) into one KOY IDE 2…
+- **`koy-agents log`** — recent activity — runs, reviews, approvals — newest first (`--agent`, `--limit`, `--json`)
+
+### Changed
+
+- **Two plans, Free and Pro** — the Team plan is gone from Billing & plan; "run when a file arrives" needs KOY Agents Pro
+
+### Fixed
+
+- **KOY Agents for Windows updates itself** — like the Mac app: it checks 15 seconds after launch and every 4 hours, downloads a new version in the background and offers **Restart now** or **Later**…
+
+## [0.2.0] - 2026-10-13
+
+### Added
+
+- **Your Assistant answers on your Claude plan while Claude Code is ready** — what its built-in commands don't understand (questions, drafts, advice) is answered by Claude through Claude Code instead of “I'm not sure what to do with…
+- **MCP servers** — Settings › MCP servers: give agents extra tools from any Model Context Protocol server — one KOY starts on this computer (a command such as `npx …`) or an…
+- **Use your Claude plan through Claude Code** — Settings › AI providers: agents can run on Claude Pro, Max, Team or Enterprise through the `claude` app, with no API key — pick a `claude-code:` model
+
 ## [0.1.0] - 2026-10-12
 
 ### Added
@@ -14,4 +38,6 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[0.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.3.0
+[0.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.2.0
 [0.1.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.1.0
