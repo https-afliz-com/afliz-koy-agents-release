@@ -3,6 +3,51 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [0.5.0] - 2026-10-14
+
+### Added
+
+- **Language setting** — Settings › General › Language: Automatic follows your Mac's languages and region, or pick one
+- **Calendar (macOS)** — connect your Mac's own Calendar in Settings › Apps — every calendar the Calendar app shows (iCloud, Google, Exchange…)
+
+### Added
+
+- **Your Assistant on the desktop** — the KOY Agents logo floats on top of your other apps (with a badge for reminders); drag it anywhere, click it to open today's reminders, your next events…
+- **Drag files onto the chat** — or pick them with the paperclip
+- **Google Drive, Docs, Sheets and Slides** — in Settings › Apps — one Google sign-in for all four, read-only
+- **Search in Settings › Apps** — find an app by name or what it does; once Google Drive is connected, the same box finds your Drive files, with *Copy link* to paste one into a skill
+- **Share usage data (optional)** — KOY Agents asks once whether to share usage data — the app opening, agents and workflows being created (with the template's name) and runs
+
+### Changed
+
+- **Signing in, upgrading and connecting happen on afliz.com** — (afliz.com/account/) instead of koyide-6137b.web.app, which is now only for development builds
+- **One KOY Pro for KOY Agents and KOY IDE 2** — Pro is the same $10-a-month KOY Pro subscription as KOY IDE 2's, so paying once unlocks both apps
+- **Messages appear on the map's toolbar** — on the same line as ＋ New, instead of over the top of the map (above a dialog while one is open)
+
+## [0.4.0] - 2026-10-13
+
+### Added
+
+- **Agents run on OpenAI, Google Gemini and Ollama** — not only Claude: the keys in Settings › AI providers now work
+- **Alert agents** — an agent whose result starts with P1, P2 or Quiet (card › More settings › Alert agent)
+- **Workflow steps work from the steps before them** — in a workflow run, each agent gets the results the earlier steps sent on (what you approved, or your edited version), so the last step can bring them all…
+- **The Browser reads news feeds and public data** — an RSS or Atom feed named in a skill becomes a list of dated headlines with their links and a short summary, and data from a public API (JSON, CSV) is read…
+- **Schedules at clock times run** — *Every morning at 8:00*, *Weekdays at 8:00*, *Every Monday at 9:00*, *Every evening at 18:00* and the new *Twice a day at 8:00 and 20:00* now start the…
+- **Departments** — a tab with its agents and workflows, written down in `departments/*.json` and built by KOY IDE 2's pipelines
+- SDK: `tabs()`, `tab()`, `createTab()`, `switchTab()`, `updateTab()` (name, description, colour), `updateWorkflow()`, and `updateAgent()` takes `apps`,…
+
+### Changed
+
+- **On a Mac, the top bar is the title bar** — The window buttons sit in it and you move the window by dragging it (anywhere outside its buttons and the search box; a double click zooms), instead of by a…
+
+### Removed
+
+- **Apps KOY didn't really connect to** — Gmail, Slack, Notion, Calendar, Google Drive, WhatsApp, Zalo, Facebook, Instagram, Threads and Files were placeholders — *Connect* only flipped a switch,…
+
+### Fixed
+
+- **The Apple silicon (arm64) Mac app opens again** — Without a Developer ID it shipped with only the compiler's signature, which macOS rejects on Apple silicon as "damaged", so the Intel build was the one that…
+
 ## [0.3.0] - 2026-10-13
 
 ### Added
@@ -38,6 +83,8 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[0.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.5.0
+[0.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.4.0
 [0.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.3.0
 [0.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.2.0
 [0.1.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.1.0
