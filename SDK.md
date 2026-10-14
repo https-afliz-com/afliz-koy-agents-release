@@ -12,7 +12,7 @@ Each release has the SDK as an npm package, `koy-agents-sdk-<version>.tgz`, on t
 (Node.js 20+; ESM and CommonJS, with TypeScript types):
 
 ```bash
-npm install https://github.com/https-afliz-com/afliz-koy-agents-release/releases/download/v0.3.0/koy-agents-sdk-0.3.0.tgz
+npm install https://github.com/https-afliz-com/afliz-koy-agents-release/releases/download/v0.5.0/koy-agents-sdk-0.5.0.tgz
 ```
 
 Use the SDK of the same version as the app (`(await koy.health()).version`).
@@ -58,7 +58,7 @@ if (a.status === 'review') {
 | `run(agent, { test })` · `waitFor(agent, { until })` · `runAndWait(agent, { test })` | Run, wait for the outcome |
 | `review(agent)` · `pass(agent, { note, edited })` · `redo(agent, { note })` · `discard(agent)` | The sandbox review |
 | `approve(agent, ok?)` · `pause(agent)` | Answer an approval · stop a run |
-| `createAgent(template, { name, workflow })` · `updateAgent(agent, patch)` · `deleteAgent(agent)` | Templates: blank, researcher, summarizer, triage, writer, monitor, analyst, social |
+| `createAgent(template, { name, workflow })` · `updateAgent(agent, patch)` · `deleteAgent(agent)` | Templates: blank, researcher, summarizer, writer, monitor, analyst |
 | `createWorkflow(name)` · `joinWorkflow(agent, workflow)` · `runWorkflow(workflow)` | Workflows |
 | `setTrust(agent, 'review-all' \| 'on-fail' \| 'autopilot')` | How closely you check its results |
 | `learn(agent, text)` · `forget(agent, text)` · `questions(agent)` · `answer(agent, id, value)` | Preferences and the card's AI questions |
