@@ -9,13 +9,13 @@ Each release has the CLI as one file for Node.js 20+: `koy-agents-<version>.cjs`
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases/latest). Download it, then:
 
 ```bash
-node koy-agents-0.3.0.cjs status
+node koy-agents-0.5.0.cjs status
 ```
 
 To call it `koy-agents`, make it executable and put it on your PATH (macOS / Linux):
 
 ```bash
-chmod +x koy-agents-0.3.0.cjs && mv koy-agents-0.3.0.cjs ~/.local/bin/koy-agents
+chmod +x koy-agents-0.5.0.cjs && mv koy-agents-0.5.0.cjs ~/.local/bin/koy-agents
 ```
 
 Use the CLI of the same version as the app (`koy-agents version`, `koy-agents health`).
@@ -32,7 +32,7 @@ koy-agents pass "Summarizer" --note "Never mention prices"
 koy-agents redo "Post Writer" --note "Shorter, no hashtags"
 koy-agents trust "Summarizer" on-fail               # review only when a check fails
 koy-agents learn "Summarizer" "Keep it to 3 points"
-koy-agents create social --name "Shop Poster"
+koy-agents create monitor --name "Price Watch"
 koy-agents chat "Make Web Monitor run every hour"
 koy-agents chat "Post the result to Slack" --agent "Publisher"
 koy-agents plan                                     # your daily plan from the Assistant
