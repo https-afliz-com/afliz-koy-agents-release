@@ -3,6 +3,43 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.0.0] - 2026-10-16
+
+### Added
+
+- **KOY Pro is on sale** — Settings › Billing & plan: $10 a month or $100 a year, one subscription for KOY Agents and KOY IDE 2, paid on KOY's account page (Paddle)
+- **Mail (Apple Mail)** — every account Mail has, no sign-in
+- **Collect invoices** — Settings › Apps › Mail: the e-invoices (XML) of the last N days become rows of the sheet "Invoices" in your Excel book — seller, tax codes, series, number,…
+- **Notes (Apple Notes)** — **Word** (each run's report as a .docx in Documents › KOY Agents › Reports) and **Weather** (MET Norway forecast for your place) apps
+- **Excel tables** — besides the run log, agents can add rows to a sheet of their own, keyed so nothing is added twice
+- **Chat with KOY on Telegram and Zalo** — /status, /agents, /run <agent>, /help — anything else goes to your Assistant and its answer comes back (Settings › Apps › "Chat with KOY here"; only your…
+- **Run when a file arrives** — KOY Pro: pick "When a file arrives" for an agent or a workflow and the folder to watch (Documents › Inbox, ~/Downloads or a full path)
+- **Screen time** — with your OK, KOY notes which app is in front (names only) so the Assistant can suggest breaks
+- **Privacy** — personal details (emails, phone numbers, card and account numbers, codes) are masked before any model reads them; Sensitive sources (senders and apps) are…
+- Each app's card has **How it works**, and Afliz can switch an app off for everyone (the card says so)
+- **Mail, Calendar and Notes on Windows** — Settings › Apps: Mail and Calendar work with classic Outlook (in Microsoft 365 or Office) — every account's Inbox and calendar, no sign-in — and Notes with…
+- **19 languages** — Settings › General › Language: English, Tiếng Việt, 日本語, 한국어, 简体中文, ไทย, Bahasa Indonesia, Bahasa Melayu, Français, Deutsch, Español, Português, Italiano,…
+- **Move to tab** — an agent's card (More settings › Tab) or a workflow's panel moves it to another tab
+- **Open at login** — Settings › General: KOY Agents opens when you log in to the computer, so scheduled agents and alerts start without opening it by hand
+- **Skills** — an agent can have a built-in skill KOY runs before its model
+- **Invoice totals** — in Excel: after every scan, the sheet "Invoice totals" adds up all the invoices collected so far — by month and by seller (number of invoices, before tax,…
+- **Amounts worked out and checked** — when an e-invoice leaves out its total, VAT or amount before tax, KOY works it out from the other two, the VAT rate or the invoice's lines
+
+### Changed
+
+- **App icons** — Settings › Apps and the map: on a Mac, Mail, Calendar, Notes, Weather, Excel, Word, Zalo and Telegram show their real icon when the app is installed — macOS…
+- The Weather card always credits its data: "Weather data from MET Norway (CC BY 4.0) · place search © OpenStreetMap contributors"
+- **No more beta plan** — signed-in testers' "Beta (unlimited)" ends — your licence decides Free, trial or Pro
+- The map fits in agents added from outside the app, and Fit to screen always fits
+- **"Share usage events"** — the question when KOY Agents first opens and the switch in Settings › Permissions now say exactly what is shared — usage events (the app opening, agents and…
+- **The Assistant does it when you say OK** — in KOY, on Telegram and on Zalo: instead of telling you what to type, it says what it will do — e.g. make an agent that moves GitHub mail to Junk, then run…
+- **"update <agent>: …"** — in the chat (KOY, Telegram, Zalo) adds to that agent's skill — e.g. *update Inbox Watch: move GitHub notifications to Junk* — the same as saying it in the…
+
+### Fixed
+
+- **Zalo** — connecting the bot never found your chat, because Zalo only hands over a message that arrives while KOY is listening
+- Mail: Connect no longer fails when the inbox's first message has moved
+
 ## [0.5.0] - 2026-10-14
 
 ### Added
@@ -83,6 +120,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.0.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.0.0
 [0.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.5.0
 [0.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.4.0
 [0.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.3.0
