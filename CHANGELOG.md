@@ -3,6 +3,33 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.1.0] - 2026-10-22
+
+### Added
+
+- **Binance app — market data and paper trading** — Settings › Apps › Binance: name the symbols to watch (e.g. BTCUSDT, ETHUSDT) and a paper account's starting cash
+- **Connect by hand on the map** — drag an agent's dot onto another agent to pass it its result, or onto an app (or an app's dot onto an agent) to give the agent that app
+- **The map shows how data moves** — lines end in arrows — into the agent for apps it reads, out of it for apps it writes to, both ways for the rest — and animate while an agent runs
+- **Focus mode for an agent** — the expand button in the agent panel opens the whole agent in a large view — its full skill, settings, schedule and next run, apps, recent runs and latest…
+- **Invoices into ERPNext, from another of your devices** — docs/ui/erpnext-handoff-mockup.html: - **ERPNext app** (Settings › Apps › ERPNext): the site's address and an API key and secret, which stay in that…
+- **People & devices works in this version** — KOY's credential issuer (issuer.afliz.com) and its key are built in, so devices can enrol and find each other on the same network
+- **Your Afliz account, one click away** — Settings › Account has **Open your account**, which opens the Afliz account portal (KOY ID signs you in there), and **Manage billing** now goes to your…
+- **People & devices: work with other people's agents, peer to peer** — Turn it on in Settings › People & devices by signing in to your **KOY ID**, with two-step verification
+- **OpenAI-compatible model servers** — agents can run on any server with the OpenAI Chat Completions API — set the agent's model to `compatible:<model id>`
+- **Afliz's shared models (Afliz employees only)** — signed in with an @afliz.com account, KOY Agents picks up the model server Afliz switches on in the account portal (for example GLM 4.7 Flash on Afliz's own…
+
+### Changed
+
+- **The agent panel** — the AI questions card folds away (KOY remembers it), the skill box opens tall enough for the skill and drags taller, and **Skill: collect invoices** appears…
+- **Clearer wording** — in several languages for the new connect and map texts (Brazilian Portuguese throughout, the formal "Sie" in German, each language's usual words for…
+- **Sign in with KOY ID** — Settings › Account signs you in with KOY ID (id.afliz.com, with a second factor) in your browser — the same account as before (your plan, trial and devices…
+- **Signing out says what it signs out of** — Sign out (Settings › Account, the account menu) and *Sign out of KOY ID* (People & devices) ask first, and say that it signs you out of KOY ID everywhere in…
+
+### Security
+
+- **KOY ID sign-ins must include the second step** — KOY Agents now refuses a KOY ID ID token that doesn't say two-step verification was done (`acr` = `mfa`), on sign-in and when it refreshes the sign-in, and…
+- **Signing out ends your KOY ID session, not just the sign-in on this computer** — KOY Agents now revokes its KOY ID sign-in at KOY ID when you sign out, so a copy of it stops working too
+
 ## [1.0.0] - 2026-10-16
 
 ### Added
@@ -120,6 +147,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.1.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.0
 [1.0.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.0.0
 [0.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.5.0
 [0.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.4.0
