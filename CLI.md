@@ -9,13 +9,13 @@ Each release has the CLI as one file for Node.js 20+: `koy-agents-<version>.cjs`
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases/latest). Download it, then:
 
 ```bash
-node koy-agents-1.1.0.cjs status
+node koy-agents-1.2.0.cjs status
 ```
 
 To call it `koy-agents`, make it executable and put it on your PATH (macOS / Linux):
 
 ```bash
-chmod +x koy-agents-1.1.0.cjs && mv koy-agents-1.1.0.cjs ~/.local/bin/koy-agents
+chmod +x koy-agents-1.2.0.cjs && mv koy-agents-1.2.0.cjs ~/.local/bin/koy-agents
 ```
 
 Use the CLI of the same version as the app (`koy-agents version`, `koy-agents health`).
