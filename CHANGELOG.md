@@ -3,6 +3,30 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.2.0] - 2026-10-27
+
+### Added
+
+- **Zalo "Listen only"** — Settings › Apps › Zalo: KOY never replies in Zalo
+- **Your Assistant can summarize your agents' work** — when it runs, it reads every agent — its tab, schedule and status, any error, and the result it made since the Assistant's previous report — so a skill like…
+- **Give your Assistant your own skill and it runs on its AI model** — like any agent; with its built-in skill it still makes your daily plan on this computer, with no model
+- **Microsoft Teams** — Settings › Apps: connect your work or school Microsoft account and agents read the Teams discussions their skill links to — read-only, KOY never posts in Teams
+
+### Fixed
+
+- **Microsoft Teams: a chat's new messages are no longer missed** — An agent summarizing a chat read nothing new after its first report, so it kept repeating the old summary
+- **Microsoft Teams: a pasted link finds its discussion** — Pasting a Teams link (Copy link in Teams) in **Find a Teams discussion…** now shows that chat or channel by name, or says why you can't read it, instead of…
+
+## [1.1.1] - 2026-10-23
+
+### Changed
+
+- **Two-step verification is your choice for your KOY ID, and needed only to share with people (P2P)** — Signing in (Settings › Account) and staying signed in no longer require it: a password-only KOY ID sign-in works for your account, KOY Pro and your…
+
+### Security
+
+- **Sharing with people still requires two-step verification** — Settings › People & devices › Turn on now signs in to KOY ID with two-step verification (if you're signed in already, KOY ID usually asks only for your…
+
 ## [1.1.0] - 2026-10-22
 
 ### Added
@@ -147,6 +171,8 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.2.0
+[1.1.1]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.1
 [1.1.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.0
 [1.0.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.0.0
 [0.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v0.5.0
