@@ -3,6 +3,21 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.3.0] - 2026-11-02
+
+### Added
+
+- **Send feedback** — Settings › General has a box to tell the KOY team what works, what doesn't and what you'd like
+- **The monthly payroll into ERPNext, after your approval** — the ERPNext Importer takes a month's payroll (a ```koy-payroll hand-off: the ERPNext kit's `scripts/payroll_mail.py` reads the provider's email, its text or…
+- **Scanned invoices** — invoices read from scans (the kit's `scripts/scan_import.py`) come as e-invoices do; KOY now also checks the seller's tax code against its check digit (a…
+- **Paddle sales into ERPNext, checked by the ERPNext Importer** — a hand-off with a ```koy-sales block (the ERPNext kit's `scripts/paddle_sync.py` drops one hourly in the folder the Importer watches) becomes draft Sales…
+- **Files that arrive in a watched folder reach the ERPNext Importer** — e-invoice and Paddle hand-offs dropped there are matched against ERPNext like those from your other devices
+
+### Changed
+
+- **Signing in to your KOY ID ends on Afliz's page and brings KOY Agents back** — once the sign-in (or the two-step sign-in that People & devices asks for) has worked, the browser goes on to afliz.com's signed-in page instead of staying…
+- **The ERPNext Importer checks invoices on your organization's own model** — the agent that checks every invoice before it goes into ERPNext runs on the GLM your organization shares through the account portal (at Afliz: GLM 4.7 Flash…
+
 ## [1.2.0] - 2026-10-27
 
 ### Added
@@ -171,6 +186,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.3.0
 [1.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.2.0
 [1.1.1]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.1
 [1.1.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.0
