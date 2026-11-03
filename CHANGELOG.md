@@ -3,6 +3,18 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.4.0] - 2026-11-03
+
+### Added
+
+- **WordPress app and the WordPress Publisher agent** — connect your site in Settings › Apps with a username and an Application Password (kept in this computer's keychain)
+
+### Fixed
+
+- **Adding an agent to a workflow from the chat works, and no longer changes its schedule** — "Add Sales Recap to the Daily Brief workflow" now adds it
+- **The chat keeps the time you ask for** — "every day at 7:30" and "every weekday at 9am" now run at those times, and any day of the week works
+- **A test started from the chat reports back there** — when a run ends, the chat says it finished, is waiting for your check or failed and why, with a button for what to do next
+
 ## [1.3.0] - 2026-11-02
 
 ### Added
@@ -186,6 +198,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.4.0
 [1.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.3.0
 [1.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.2.0
 [1.1.1]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.1.1
