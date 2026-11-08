@@ -3,6 +3,45 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.5.0] - 2026-11-08
+
+### Added
+
+- **YouTube app and the YouTube Publisher agent** — connect your channel in Settings › Apps with Google's sign-in
+
+### Changed
+
+- **Afliz AI Router is the default AI** — once you sign in, the chat and agents use Afliz AI Router with nothing to set up, within your plan's allowance
+- **When Afliz AI Router's allowance is used up** — the chat shows Afliz AI Router's own message and when it's back, with **Upgrade** and **Use your own AI provider**
+- Settings shows Afliz AI Router's models under their Afliz names
+- **Afliz AI Router is turned on client by client** — Settings › AI providers now shows it as Active or Inactive
+
+### Fixed
+
+- **KOY Agents opens without waiting for the keychain** — if macOS asked for permission to read a saved key at start, for example after an update, the app stayed closed until you answered
+
+### Added
+
+- **The chat builds workflows on your own AI provider** — with a provider connected in Settings › AI providers, the Assistant understands plain words, plans agents and workflows, and waits for Go ahead, with no…
+- **Groq as an AI provider** — save a Groq key in Settings › AI providers to run agents on GPT-OSS 120B and 20B
+- **The chat says why it can't** — when KOY can't do what you ask, the Assistant says whether the reason is technical or privacy
+- **Getting a Gemini or Groq key** — Settings › AI providers now says where to get a free key and how, with a link
+
+### Fixed
+
+- **Links are readable in the dark theme** — links such as “Get a free key” in Settings › AI providers were the browser's dark blue on a dark background
+- **Local models no longer show "AI key missing"** — an agent on an Ollama model showed this warning on the map and on its card, though Ollama needs no key and the agent could run
+- **Agents run on Afliz AI Router wherever the chat does** — on any plan, and agents saved on a provider with no key now move to the router instead of stopping with "No AI key"
+
+### Changed
+
+- **Current Gemini models** — Google Gemini now offers Gemini 3.8 Flash, 3.5 Flash-Lite and 4 Argon
+- **Saving a key sets a usable default** — if your default model has no key, new agents now use the provider you just connected
+
+### Security
+
+- Security updates to the packages KOY Agents uses for spreadsheets, secure connections and app updates (zip, rustls, updater, and others)
+
 ## [1.4.0] - 2026-11-03
 
 ### Added
@@ -198,6 +237,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.5.0
 [1.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.4.0
 [1.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.3.0
 [1.2.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.2.0
