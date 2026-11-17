@@ -3,6 +3,32 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.6.0] - 2026-11-16
+
+### Added
+
+- **Afliz AI Router with a seat from your organization** — when your KOY Pro comes from your organization, KOY Agents now uses the Afliz AI Router allowance your organization gives you, for the chat and for agent runs
+- **Jump to the latest message** — scroll up in a chat and a round button appears at the bottom — click it to go back to the newest message
+- **ERPNext changes you approve, as a card in the chat** — An agent connected to your organization's ERPNext through its Agent API (the `erpnext-mcp` server with an `erpa_` token from the portal's ERP agents page)…
+- **Work platforms: Freelancer.com, Upwork and LinkedIn** — connected through your KOY account (Afliz's apps on them; Connect in Settings › Apps)
+- **Job boards: Remote OK and Himalayas** — Two new apps that read remote software jobs from their free public listings (no account, nothing about you leaves the computer)
+
+### Changed
+
+- **No more Suggestions under a conversation** — the row of suggested messages above the chat box is gone
+- **Settings › AI providers no longer lists every model under KOY AI Router** — with what's left of each: the router picks, and there was nothing to do with the list
+- **No model to pick on the agent card while KOY AI Router is on** — the router chooses the model for each task, so the card's Model field only shows when you choose models yourself (Settings › AI providers)
+- **A quieter Assistant header** — the labels that did nothing when clicked (reminders count, screen time today, the next event) are gone — the badge on the KOY mark still counts your…
+- **The Assistant's chat opens full height** — from the top of the window to the bottom, on the right — no longer a small box beside the Assistant
+- **Zoom and the minimap moved to the bottom left** — clear of the chat on the right
+- **A shorter agent card** — the "AI" block of questions is gone from the card — tell the agent what you expect in its chat instead
+
+### Fixed
+
+- **The plan follows your account again on computers that once ran a development build** — data left by such a build kept a "demo" plan, so Settings › Account always showed Free with no organization, whatever your licence said
+- **Far fewer keychain password prompts on macOS** — KOY Agents kept each sign-in and key as its own keychain item, and macOS asked for your password once per item — again after every update
+- **One internal error no longer freezes the app** — if a command failed part-way while it held one of the app's shared locks, every later action failed too until KOY Agents was restarted
+
 ## [1.5.0] - 2026-11-08
 
 ### Added
@@ -237,6 +263,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.6.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.0
 [1.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.5.0
 [1.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.4.0
 [1.3.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.3.0
