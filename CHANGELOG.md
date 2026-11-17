@@ -3,6 +3,18 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.6.3] - 2026-11-17
+
+### Fixed
+
+- **The Assistant keeps a request that waits for a connection** — After *Connect Mail*, "đã kết nối" (connected) carries the request on: KOY checks the app itself, says so when it still isn't connected, and goes on to what…
+- **A Connect button in the chat or on the map opens Settings › Apps at that app's card** — scrolled to and highlighted, with its first field (or its Connect button) ready, for every app, not just the top of the list
+- **ERPNext: Test the connection says why it failed** — in the app's language: the name wasn't found (not on the office network), the company certificate isn't installed, the key or secret was refused, the public…
+
+### Added
+
+- **ERPNext › Company certificate** — for an office ERPNext behind its own certificate, the card fetches the company's root certificate from http://<server>/company-root-ca.crt (only a CA…
+
 ## [1.6.2] - 2026-11-17
 
 ### Added
@@ -295,6 +307,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.6.3]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.3
 [1.6.2]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.2
 [1.6.1]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.1
 [1.6.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.0
