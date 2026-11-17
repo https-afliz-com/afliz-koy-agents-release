@@ -3,6 +3,20 @@
 What changed in each release of KOY Agents, its `koy-agents` command line and its SDK. Download a version from its
 [release page](https://github.com/https-afliz-com/afliz-koy-agents-release/releases).
 
+## [1.6.1] - 2026-11-17
+
+### Added
+
+- **How long a reply takes, in the chat** — while the Assistant or an agent works on a reply, a counter next to *Thinking…* shows the seconds since you pressed Send (12s, 1m 05s, 1h 02m), so you can…
+- **Browser tool (trial)** — Web Monitor agents can read web pages that need JavaScript (job boards, shops, dashboards), through…
+- **Two new use cases** — ＋ New › Use cases in a development build; `departments/` in this repository: - **Second Opinion**: write a business decision on the Decision Brief card and…
+
+### Fixed
+
+- **Summarizing a Teams chat from the Assistant** — asking to summarize your Teams conversations without naming one no longer ends in "I didn't find a discussion like that"
+- **Everything in the language you chose** — results, the automatic checks in the review, the Assistant's answers, its plans and buttons, the Activity log and notifications now follow Settings ›…
+- **Connectors Afliz switched off are hidden** — they no longer show as "Switched off" cards in Settings › Apps, on the map, in the app and template pickers, or in what the Assistant offers
+
 ## [1.6.0] - 2026-11-16
 
 ### Added
@@ -263,6 +277,7 @@ What changed in each release of KOY Agents, its `koy-agents` command line and it
 - **The `koy-agents` command line and the SDK** — `@koy/agents-sdk`: run agents, review their results, teach preferences, run workflows and talk to the Assistant from a terminal or from code, through the…
 - **Automatic updates** — the app checks for a new version shortly after launch and every 4 hours, downloads it in the background and offers **Restart now** or **Later** (it installs…
 
+[1.6.1]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.1
 [1.6.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.6.0
 [1.5.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.5.0
 [1.4.0]: https://github.com/https-afliz-com/afliz-koy-agents-release/releases/tag/v1.4.0
