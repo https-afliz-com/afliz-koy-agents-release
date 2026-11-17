@@ -12,7 +12,7 @@ Each release has the SDK as an npm package, `koy-agents-sdk-<version>.tgz`, on t
 (Node.js 20+; ESM and CommonJS, with TypeScript types):
 
 ```bash
-npm install https://github.com/https-afliz-com/afliz-koy-agents-release/releases/download/v1.6.2/koy-agents-sdk-1.6.2.tgz
+npm install https://github.com/https-afliz-com/afliz-koy-agents-release/releases/download/v1.6.3/koy-agents-sdk-1.6.3.tgz
 ```
 
 Use the SDK of the same version as the app (`(await koy.health()).version`).
